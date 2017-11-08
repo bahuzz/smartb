@@ -1,0 +1,21 @@
+{
+  "name": "efinland-template",
+  "version": "0.1.0",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-filter": "^5.0.1",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-main-bower-files": "^1.6.2",
+    "gulp-refresh": "^1.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sass-glob": "^1.0.8",
+    "gulp-uglify": "^3.0.0",
+    "main-bower-files": "^2.13.1"
+  },
+  "dependencies": {
+    "bootstrap-sass-grid": "^4.0.1"
+  }
+}

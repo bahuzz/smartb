@@ -1,0 +1,125 @@
+body {
+  font-family: 'Akzidenz-Grotesk Pro Regular';
+  font-size: 16px;
+  color: #404040; }
+
+.block {
+  background: #eee; }
+
+img {
+  max-width: 100%; }
+
+.top-slider {
+  margin-bottom: 74px; }
+
+.slide {
+  position: relative;
+  max-height: 444px;
+  overflow: hidden; }
+  .slide:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.31);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  .slide__title {
+    font-family: 'PT Serif', serif;
+    font-size: 60px;
+    color: #FFF;
+    margin-bottom: 30px; }
+  .slide__content {
+    position: absolute;
+    bottom: 90px;
+    left: 50%;
+    margin-left: -368px;
+    width: 736px; }
+  .slide__more {
+    text-transform: uppercase;
+    color: #FFF;
+    font-size: 18px;
+    text-decoration: none; }
+
+.bx-controls {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 0; }
+
+.bx-wrapper {
+  position: relative; }
+
+.bx-pager-item {
+  display: inline-block; }
+
+.bx-pager-link {
+  display: inline-block;
+  text-indent: -9000px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  margin: 3px;
+  margin-bottom: 11px; }
+  .bx-pager-link.active {
+    background: #FFF; }
+
+.news-block {
+  position: relative;
+  display: block; }
+  .news-block:hover .news-block__title {
+    color: #767676; }
+  .news-block__text {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding-left: 35px;
+    font-family: "PT Serif";
+    padding-bottom: 50px; }
+  .news-block__date {
+    font-size: 16px;
+    color: #767676;
+    margin-bottom: 10px; }
+  .news-block__title {
+    font-size: 24px;
+    color: #404040;
+    margin-bottom: 15px; }
+  .news-block__readmore {
+    font-size: 16px;
+    font-family: "Akzidenz-Grotesk Pro Regular";
+    text-transform: uppercase;
+    color: #767676; }
+
+.news__img {
+  margin-bottom: 10px; }
+
+.news__date {
+  font-size: 12px;
+  color: #767676;
+  font-family: "PT Serif";
+  margin-bottom: 18px; }
+
+.news__title {
+  color: #404040;
+  font-size: 18px;
+  font-family: "PT Serif";
+  text-decoration: none;
+  line-height: 1.5em; }
+
+.news-container__row {
+  margin-bottom: 20px; }
+
+.news-container__more {
+  text-align: center;
+  max-width: 570px;
+  margin: auto;
+  border-bottom: 1px solid #cdcdcd;
+  padding-bottom: 56px;
+  margin-bottom: 65px; }
+
+.news-container__link {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 24px;
+  color: #404040; }

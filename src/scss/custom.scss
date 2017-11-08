@@ -1,0 +1,144 @@
+body {
+	font-family: 'Akzidenz-Grotesk Pro Regular';
+	font-size: 16px;
+	color: #404040;
+}
+.block {
+	background: #eee;
+}
+img {
+	max-width: 100%;
+}
+.top-slider {
+	margin-bottom: 74px;
+}
+.slide {
+	position: relative;
+	max-height: 444px;
+	overflow: hidden;
+	&:before {
+			content: "";
+			background: rgba(0,0,0,.31);
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	&__title {
+		font-family: 'PT Serif', serif;
+		font-size: 60px;
+		color: #FFF;
+		margin-bottom: 30px;
+	}
+	&__content {
+		position: absolute;
+		bottom: 90px;
+		left: 50%;
+		margin-left: -368px;
+		width: 736px;	
+	}
+	&__more {
+		text-transform: uppercase;
+		color: #FFF;
+		font-size: 18px;
+		text-decoration: none;
+	}
+}
+.bx-controls {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	bottom: 0;
+}
+.bx-wrapper {
+	position: relative;
+}
+.bx-pager-item {
+	display: inline-block;
+	
+}
+.bx-pager-link {
+	display: inline-block;
+	text-indent: -9000px;
+	width: 15px;
+	height: 15px;
+	-webkit-border-radius: 50%;
+	        border-radius: 50%;
+	border: 3px solid #fff;
+	margin: 3px;
+	margin-bottom: 11px;
+	&.active {
+		background: #FFF;
+	}
+}
+.news-block {
+	position: relative;
+	display: block;
+	&:hover {
+		.news-block__title {
+			color: #767676;
+		}
+	}
+	&__text {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		padding-left: 35px;
+		font-family: "PT Serif";
+		padding-bottom: 50px;
+	}
+	&__date {
+		font-size: 16px;
+		color: #767676;
+		margin-bottom: 10px;
+	}
+	&__title {
+		font-size: 24px;
+		color: #404040;
+		margin-bottom: 15px;
+	}
+	&__readmore {
+		font-size: 16px;
+		font-family: "Akzidenz-Grotesk Pro Regular";
+		text-transform: uppercase;
+		color: #767676;
+	}
+}
+.news {
+	&__img {
+		margin-bottom: 10px;
+	}
+	&__date {
+		font-size: 12px;
+		color: #767676;
+		font-family: "PT Serif";
+		margin-bottom: 18px;
+	}
+	&__title {
+		color: #404040;
+		font-size: 18px;
+		font-family: "PT Serif";
+		text-decoration: none;
+		line-height: 1.5em;
+	}
+}
+.news-container {
+	&__row {
+		margin-bottom: 20px;
+	}
+	&__more {
+		text-align: center;
+		max-width: 570px;
+		margin: auto;
+		border-bottom: 1px solid #cdcdcd;
+		padding-bottom: 56px;
+		margin-bottom: 65px;
+	}
+	&__link {
+		text-transform: uppercase;
+		text-decoration: none;
+		font-size: 24px;
+		color: #404040;
+	}
+}
