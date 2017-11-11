@@ -5,6 +5,7 @@ var sassGlob = require('gulp-sass-glob');
 var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
 var autoprefixer = require('gulp-autoprefixer');
+var svgSprite = require("gulp-svg-sprites");
 
 gulp.task('html', function() {
   return gulp.src('src/*.html')
@@ -56,6 +57,12 @@ gulp.task('sass', function() {
         }))
     .pipe(gulp.dest('app/css'))
     .pipe(browserSync.stream());
+});
+
+gulp.task('sprites', function () {
+    return gulp.src('src/img/*.svg')
+        .pipe(svgSprite({mode: "symbols"}))
+        .pipe(gulp.dest("app"));
 });
  
 gulp.task('watch', function() {
