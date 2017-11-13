@@ -17,6 +17,7 @@
     "main-bower-files": "^2.13.1"
   },
   "dependencies": {
-    "bootstrap-sass-grid": "^4.0.1"
+    "bootstrap-sass-grid": "^4.0.1",
+    "sprity": "^1.0.8"
   }
 }

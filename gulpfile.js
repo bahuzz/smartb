@@ -6,6 +6,7 @@ var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
 var autoprefixer = require('gulp-autoprefixer');
 var svgSprite = require("gulp-svg-sprites");
+var spritesmith = require('gulp.spritesmith');
 
 gulp.task('html', function() {
   return gulp.src('src/*.html')
@@ -63,6 +64,20 @@ gulp.task('sprites', function () {
     return gulp.src('src/img/*.svg')
         .pipe(svgSprite({mode: "symbols"}))
         .pipe(gulp.dest("app"));
+});
+
+gulp.task('owl-sprite', function () {
+  var spriteData = gulp.src('src/img/owl/*.png').pipe(spritesmith({
+    imgName: 'owl-sprite.png',
+    cssName: '_owl-sprite.scss',
+    imgPath: '../img/owl-sprite.png'
+  }));
+
+  var imgStream = spriteData.img
+  .pipe(gulp.dest('app/img'));
+
+  var cssStream = spriteData.css
+  .pipe(gulp.dest('src/scss'));
 });
  
 gulp.task('watch', function() {
