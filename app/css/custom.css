@@ -27,6 +27,15 @@
   text-rendering: optimizeLegibility; }
 
 @font-face {
+  font-family: 'LatoWebHeavy';
+  src: url("../fonts/Lato-Heavy.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Lato-Heavy.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-Heavy.woff2") format("woff2"), url("../fonts/Lato-Heavy.woff") format("woff"), url("../fonts/Lato-Heavy.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility; }
+
+@font-face {
   font-family: 'Segoe UI';
   src: url("../fonts/segoe-ui.eot");
   /* IE9 Compat Modes */
@@ -36,7 +45,7 @@
   text-rendering: optimizeLegibility; }
 
 @font-face {
-  font-family: 'Segoe UI';
+  font-family: 'Segoe UI Light';
   src: url("../fonts/segoe-ui-light.eot");
   /* IE9 Compat Modes */
   src: url("../fonts/segoe-ui-light.eot?#iefix") format("embedded-opentype"), url("../fonts/segoe-ui-light.woff2") format("woff2"), url("../fonts/segoe-ui-light.woff") format("woff"), url("../fonts/segoe-ui-light.ttf") format("truetype");
@@ -90,8 +99,8 @@
     margin-bottom: 25px; }
 
 .proposal {
-  background: url(../img/parallax.jpg) center top no-repeat;
-  height: 521px;
+  background: #312c37 url(../img/parallax.jpg) center top no-repeat;
+  min-height: 521px;
   color: #FFF;
   margin-bottom: 40px; }
   .proposal .container {
@@ -115,20 +124,19 @@
     left: 0;
     top: 0; }
 
+.col-systems {
+  margin: auto;
+  margin-bottom: 50px; }
+
 .systems {
   margin-bottom: 70px; }
-  .systems .col-md-4:nth-child(2) .systems__block {
-    margin: auto; }
-  .systems .col-md-4:nth-child(3) .systems__block {
-    float: right; }
   .systems__block {
     position: relative;
     border: 1px solid #403A45;
     display: block;
     max-width: 320px;
     -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.7);
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.7);
-    margin-bottom: 50px; }
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.7); }
     .systems__block:hover {
       text-decoration: none;
       border: 1px solid #f92854; }
@@ -186,8 +194,8 @@
     margin-bottom: 40px; }
 
 .protect {
-  height: 325px;
-  background: url(../img/protect.jpg) center 0 no-repeat;
+  min-height: 325px;
+  background: #3b3546 url(../img/protect.jpg) center 0 no-repeat;
   padding-top: 50px;
   color: #FFF;
   margin-bottom: 75px; }
@@ -271,7 +279,8 @@
   .relative-articles__block {
     -webkit-box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
-    display: block; }
+    display: block;
+    text-decoration: none; }
     .relative-articles__block:hover {
       text-decoration: none; }
   .relative-articles__name {
@@ -288,10 +297,11 @@
     align-items: center;
     color: #fff;
     font-family: 'LatoWebBold';
-    font-size: 18px; }
+    font-size: 18px;
+    text-decoration: none; }
 
 .consult {
-  height: 568px;
+  min-height: 568px;
   background: #f92854; }
   .consult .container {
     background: url(../img/form.jpg) 0 0 no-repeat;
@@ -406,7 +416,7 @@
     font-family: 'LatoWebBold'; }
 
 .portfolio .item {
-  width: 318px; }
+  max-width: 100%; }
 
 .portfolio .owl-controls {
   position: absolute;
@@ -698,3 +708,220 @@
     right: 0;
     bottom: -18px;
     z-index: 1; }
+
+.diagrams {
+  margin-bottom: 27px; }
+  .diagrams__item {
+    width: 20%;
+    float: left;
+    text-align: center;
+    position: relative; }
+  .diagrams .timer {
+    display: none; }
+  .diagrams__num {
+    position: absolute;
+    top: 70px;
+    left: 6px;
+    width: 100%;
+    text-align: center;
+    font-family: "LatoWebHeavy";
+    font-size: 57px;
+    color: #403B46; }
+  .diagrams__text {
+    font-size: 16px;
+    font-family: "LatoWebBold";
+    position: relative;
+    top: -20px; }
+
+.diagram {
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  position: relative; }
+  .diagram .text {
+    font-size: 30px; }
+
+@media (max-width: 1240px) {
+  .protect__block-name {
+    font-size: 20px; }
+  .logo-slider .owl-prev {
+    left: -10px; }
+  .logo-slider .owl-next {
+    right: -10px; }
+  .reviews-slider .owl-prev {
+    left: -25px; }
+  .reviews-slider .owl-next {
+    right: -25px; } }
+
+@media (max-width: 1199px) {
+  .diagrams__num {
+    font-size: 30px; }
+  .proposal .container {
+    padding-top: 25px; }
+  .proposal .page__title {
+    margin-bottom: 25px; }
+  .protect {
+    padding-top: 30px; }
+    .protect__block {
+      display: block;
+      text-align: center; }
+    .protect__title {
+      margin-bottom: 40px; }
+  .steps__block {
+    font-size: 14px; }
+  .consult .container {
+    background: url(../img/form-1200.png) center 56px no-repeat; }
+  .consult__phone {
+    left: 322px; } }
+
+@media (max-width: 1023px) {
+  .diagrams__num {
+    font-size: 23px;
+    top: 54px; }
+  .proposal {
+    background-image: none; }
+    .proposal__col {
+      width: 100%;
+      margin-bottom: 30px; }
+  .steps__wrapper {
+    margin-left: -100px;
+    margin-right: -100px; }
+  .relative-articles__name {
+    padding-left: 10px;
+    font-size: 14px; }
+  .consult .container {
+    background: none;
+    top: 0; }
+  .consult__phone {
+    background: url(../img/form-phone.png) 0 0 no-repeat;
+    height: 136px;
+    width: 393px;
+    left: auto;
+    right: 0px;
+    top: 47px;
+    padding-top: 52px;
+    padding-left: 18px; }
+  .consult__title {
+    padding-top: 45px; }
+  .consult__input, .consult__textarea {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#feeaee+0,f92854+100 */
+    background: #feeaee;
+    /* Old browsers */
+    /* FF3.6-15 */
+    /* Chrome10-25,Safari5.1-6 */
+    background: -webkit-gradient(linear, left top, right top, from(#feeaee), to(#f92854));
+    background: linear-gradient(to right, #feeaee 0%, #f92854 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feeaee', endColorstr='#f92854',GradientType=1 );
+    /* IE6-9 */ }
+  .systems__name {
+    font-size: 16px; }
+  .page-top__title {
+    font-size: 30px; } }
+
+@media (max-width: 991px) {
+  .systems {
+    margin-bottom: 70px; }
+    .systems__block {
+      max-width: 100%; }
+    .systems .col-md-4 {
+      margin: auto;
+      margin-bottom: 50px; }
+      .systems .col-md-4:nth-child(3) .systems__block {
+        float: none; }
+  .steps {
+    overflow: hidden;
+    margin-bottom: 40px; }
+    .steps__wrapper {
+      margin-left: 0;
+      margin-right: 0;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      .steps__wrapper:before {
+        display: none; }
+    .steps__block {
+      float: left;
+      margin-bottom: 20px; }
+      .steps__block:nth-child(even) {
+        top: 0; } }
+
+@media (max-width: 767px) {
+  .portfolio .owl-prev {
+    display: none; }
+  .portfolio .owl-next {
+    display: none; }
+  .systems__image {
+    text-align: center; }
+  .protect {
+    background-image: none; }
+    .protect__block {
+      margin-bottom: 50px; }
+      .protect__block-image {
+        margin-bottom: 10px; }
+  .steps__wrapper {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .video__slider .owl-prev {
+    display: none; }
+  .video__slider .owl-next {
+    display: none; }
+  .reviews-slider__block {
+    max-width: 320px; }
+  .reviews-slider .owl-prev {
+    display: none; }
+  .reviews-slider .owl-next {
+    display: none; }
+  .relative-articles__block {
+    max-width: 340px;
+    margin: auto;
+    margin-bottom: 40px; }
+  .consult {
+    padding-left: 10px;
+    padding-right: 10px; }
+    .consult__phone {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 280px;
+      height: auto;
+      background-size: 100% auto;
+      margin-bottom: 20px;
+      min-height: 100px;
+      padding-top: 38px;
+      padding-left: 14px;
+      font-size: 21px; }
+    .consult__title {
+      font-size: 27px;
+      line-height: 1.2em;
+      padding-top: 25px;
+      margin-bottom: 7px; }
+    .consult__row {
+      width: 100%;
+      margin-bottom: 9px; }
+    .consult__button-wrapper {
+      width: 100%; }
+  .diagrams__item {
+    float: none;
+    width: 100%;
+    max-width: 270px;
+    margin: auto; }
+  .diagrams__num {
+    top: 93px;
+    font-size: 50px; }
+  .video__slide-text {
+    max-height: 223px;
+    overflow: hidden; }
+  .video__slide-title {
+    margin-bottom: 10px; }
+  .video__text-block {
+    padding: 20px; } }
+
+@media (max-width: 479px) {
+  .reviews-slider .owl-prev {
+    left: 0;
+    display: none; }
+  .reviews-slider .owl-next {
+    right: 0;
+    display: none; }
+  .relative-articles {
+    margin-bottom: 30px; } }
