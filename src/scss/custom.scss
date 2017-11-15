@@ -3,7 +3,7 @@
 $red: #f92854;
 $dark: #403b46;
 .page-top {
-    background: url(../img/page-top-back.jpg) center 0 no-repeat fixed;
+    background: url(../img/page-top-back.jpg) center 0 no-repeat;
     margin-bottom: 54px;
     -webkit-background-size: cover;
     -o-background-size: cover;
@@ -191,6 +191,9 @@ $dark: #403b46;
 		        align-items: center;
 		&-image {
 			margin-right: 30px;
+			img {
+				max-width: 300px;
+			}
 		}
 	}
 	&__block-name {
@@ -290,7 +293,7 @@ $dark: #403b46;
 	}
 }
 .consult {
-	min-height: 568px;
+	height: 568px;
 	background: $red;
 	.container {
 		background: url(../img/form.jpg) 0 0 no-repeat;
@@ -978,6 +981,7 @@ $dark: #403b46;
 	.consult {
 		padding-left: 10px;
 		padding-right: 10px;
+		height: auto;
 		&__phone {
 			position: relative;
 			top: 0;

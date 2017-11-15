@@ -54,7 +54,7 @@
   text-rendering: optimizeLegibility; }
 
 .page-top {
-  background: url(../img/page-top-back.jpg) center 0 no-repeat fixed;
+  background: url(../img/page-top-back.jpg) center 0 no-repeat;
   margin-bottom: 54px;
   background-size: cover;
   height: 297px;
@@ -208,6 +208,8 @@
     align-items: center; }
     .protect__block-image {
       margin-right: 30px; }
+      .protect__block-image img {
+        max-width: 300px; }
   .protect__block-name {
     font-size: 24px;
     font-family: 'LatoWebRegular'; }
@@ -301,7 +303,7 @@
     text-decoration: none; }
 
 .consult {
-  min-height: 568px;
+  height: 568px;
   background: #f92854; }
   .consult .container {
     background: url(../img/form.jpg) 0 0 no-repeat;
@@ -877,7 +879,8 @@
     margin-bottom: 40px; }
   .consult {
     padding-left: 10px;
-    padding-right: 10px; }
+    padding-right: 10px;
+    height: auto; }
     .consult__phone {
       position: relative;
       top: 0;
