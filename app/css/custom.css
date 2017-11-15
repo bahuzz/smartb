@@ -54,7 +54,7 @@
   text-rendering: optimizeLegibility; }
 
 .page-top {
-  background: url(../img/page-top-back.jpg) center 0 no-repeat;
+  background: url(../img/page-top-back.jpg) center 0 no-repeat fixed;
   margin-bottom: 54px;
   background-size: cover;
   height: 297px;
@@ -99,7 +99,7 @@
     margin-bottom: 25px; }
 
 .proposal {
-  background: #312c37 url(../img/parallax.jpg) center top no-repeat;
+  background: #312c37 url(../img/parallax.jpg) center center no-repeat fixed;
   min-height: 521px;
   color: #FFF;
   margin-bottom: 40px; }
@@ -195,7 +195,7 @@
 
 .protect {
   min-height: 325px;
-  background: #3b3546 url(../img/protect.jpg) center 0 no-repeat;
+  background: #3b3546 url(../img/protect.jpg) center center no-repeat fixed;
   padding-top: 50px;
   color: #FFF;
   margin-bottom: 75px; }
