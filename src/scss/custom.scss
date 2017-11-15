@@ -290,6 +290,9 @@ $dark: #403b46;
 		font-family: 'LatoWebBold';
 		font-size: 18px;
 		text-decoration: none;
+		&-in {
+			text-align: center;
+		}
 	}
 }
 .consult {
@@ -477,6 +480,13 @@ $dark: #403b46;
 	&__slide {
 		height: 318px;
 		margin-bottom: 15px;
+		max-width: 49%;
+		&-wrapper {
+			display: flex;
+			-webkit-justify-content: space-between;
+			        justify-content: space-between;
+			    height: 318px;
+		}
 		&-title {
 			font-size: 24px;
 			margin-bottom: 20px;
@@ -488,6 +498,7 @@ $dark: #403b46;
 	    color: #403A45;
 	    font-size: 16px;
 	    padding: 30px 40px;
+	    max-width: 49%;
 	}
 	.item {
 		padding: 10px;
@@ -882,6 +893,12 @@ $dark: #403b46;
 	}
 	.page-top__title {
 		font-size: 30px;
+	}
+	.video__text-block {
+		display: none;
+	}
+	.video__slide {
+		max-width: 100%;
 	}
 }
 @media(max-width: 991px) {

@@ -12,7 +12,7 @@ $('.portfolio__carousel').owlCarousel({
 	}); 
 
 $('.video__carousel').owlCarousel({
-	itemsCustom: [ [0, 1], [500, 1],[660,1], [767, 1],[992,1],[1180,2]],
+	itemsCustom: [ [0, 1], [500, 1],[660,1], [767, 1],[992,1],[1180,1]],
   	autoplay:true,
     autoplayTimeout:1000,
     autoplayHoverPause:true,
