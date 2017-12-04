@@ -91,4 +91,12 @@ $(".diagram5").circliful({
                 backgroundColor: "#fff",
                 percent: 82
            });
+if($(document).width() > 767) {
+    $("#home-carousel").featureCarousel({
+        autoPlay: 0,
+        trackerIndividual: false,
+        trackerSummation: false
+    });
+};
+
 });	
