@@ -828,14 +828,14 @@
 
 #carousel-left {
   position: absolute;
-  bottom: 33px;
-  left: 220px;
+  bottom: 63px;
+  left: 30px;
   cursor: pointer; }
 
 #carousel-right {
   position: absolute;
-  bottom: 33px;
-  right: 220px;
+  bottom: 63px;
+  right: 30px;
   cursor: pointer; }
 
 @media (max-width: 1240px) {
@@ -848,7 +848,17 @@
   .reviews-slider .owl-prev {
     left: -25px; }
   .reviews-slider .owl-next {
-    right: -25px; } }
+    right: -25px; }
+  #carousel-left {
+    position: absolute;
+    bottom: 43px;
+    left: 30px;
+    cursor: pointer; }
+  #carousel-right {
+    position: absolute;
+    bottom: 43px;
+    right: 30px;
+    cursor: pointer; } }
 
 @media (max-width: 1199px) {
   .diagrams__num {
@@ -920,7 +930,17 @@
   .video__text-block {
     display: none; }
   .video__slide {
-    max-width: 100%; } }
+    max-width: 100%; }
+  #carousel-left {
+    position: absolute;
+    bottom: 43px;
+    left: 10px;
+    cursor: pointer; }
+  #carousel-right {
+    position: absolute;
+    bottom: 43px;
+    right: 10px;
+    cursor: pointer; } }
 
 @media (max-width: 991px) {
   #home-carousel {
